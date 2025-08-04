@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <meta name="description" content="The page you are looking for could not be found">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .error-page {
+            text-align: center;
+            padding: calc(var(--spacing-unit) * 6) 0;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: bold;
+            margin: 0;
+            line-height: 1;
+            color: var(--accent-red);
+        }
+        
+        .error-message {
+            font-size: 2rem;
+            margin: var(--spacing-unit) 0 calc(var(--spacing-unit) * 3);
+        }
+        
+        .error-description {
+            max-width: 600px;
+            margin: 0 auto calc(var(--spacing-unit) * 3);
+        }
+        
+        @media (max-width: 767px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-message {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <section class="error-page">
+                <h2 class="error-code">404</h2>
+                <h3 class="error-message">Page Not Found</h3>
+                <p class="error-description">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+                <a href="/" class="cta-button">Return to Homepage</a>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
